@@ -1,0 +1,95 @@
+[gd_scene load_steps=15 format=3 uid="uid://dvfyja2vxw06i"]
+
+[ext_resource type="Texture2D" uid="uid://ca2hwhuqldbmb" path="res://1. Free Hologram Interface Wenrexa/Card X1/Card X1.png" id="1_60m3k"]
+[ext_resource type="Script" path="res://control.gd" id="1_p1ff5"]
+[ext_resource type="Texture2D" uid="uid://ndnrjlleths6" path="res://1. Free Hologram Interface Wenrexa/Button 1/Button Normal.png" id="2_k2ymh"]
+[ext_resource type="Texture2D" uid="uid://ccguqxsmtsw2l" path="res://1. Free Hologram Interface Wenrexa/Button 1/Button Active.png" id="3_4po67"]
+[ext_resource type="FontFile" uid="uid://6dkhnlwvanrh" path="res://NeonSans.otf" id="5_1rm2e"]
+[ext_resource type="AudioStream" uid="uid://xvhmls53wfa7" path="res://073962_131659__bertrof__game-sound-intro-to-game_amp_80921__justinbw__buttonchime02up_2mp3-90504.mp3" id="6_8m5xk"]
+[ext_resource type="Texture2D" uid="uid://cyrcaqnssuss4" path="res://1. Free Hologram Interface Wenrexa/Card X2/Card X2.png" id="6_f6gf4"]
+[ext_resource type="Texture2D" uid="uid://c2mm18ont2rmy" path="res://amelia.png" id="7_j7tyh"]
+[ext_resource type="Texture2D" uid="uid://baehbbubenx0o" path="res://1. Free Hologram Interface Wenrexa/Card X3/Card X5.png" id="7_ypaih"]
+[ext_resource type="Texture2D" uid="uid://chfuvtdda8dkr" path="res://1. Free Hologram Interface Wenrexa/Icons/10.png" id="8_dtrn8"]
+[ext_resource type="Texture2D" uid="uid://m3etisk8ff16" path="res://1. Free Hologram Interface Wenrexa/Icons/09.png" id="9_jo24l"]
+[ext_resource type="FontFile" uid="uid://vnd0yyrgh4tn" path="res://Gerhaus_Font_1_01/OpenType (.otf)/Gerhaus-Italic.otf" id="11_xx61y"]
+[ext_resource type="AudioStream" uid="uid://btlv7sokx1n4y" path="res://menu-click-89198.mp3" id="12_uoyx8"]
+
+[sub_resource type="Theme" id="Theme_2cjhh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 557.54
+offset_right = -672.0
+offset_bottom = 629.541
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.71239
+script = ExtResource("1_p1ff5")
+
+[node name="CardX1" type="Sprite2D" parent="."]
+position = Vector2(241, 579.265)
+scale = Vector2(1.81, 1.81)
+texture = ExtResource("1_60m3k")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(186, 352)
+texture_normal = ExtResource("2_k2ymh")
+texture_pressed = ExtResource("3_4po67")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TouchScreenButton"]
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 87.0
+offset_bottom = 50.0
+theme = SubResource("Theme_2cjhh")
+theme_override_fonts/normal_font = ExtResource("5_1rm2e")
+text = "Start"
+
+[node name="CardX2" type="Sprite2D" parent="."]
+position = Vector2(241, 211)
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("6_f6gf4")
+
+[node name="Sprite2D" type="Sprite2D" parent="CardX2"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_j7tyh")
+
+[node name="right" type="TouchScreenButton" parent="CardX2"]
+position = Vector2(219.048, -33.333)
+texture_normal = ExtResource("8_dtrn8")
+
+[node name="left" type="TouchScreenButton" parent="CardX2"]
+position = Vector2(-236.508, -33.333)
+texture_normal = ExtResource("9_jo24l")
+
+[node name="CardX5" type="Sprite2D" parent="."]
+position = Vector2(254, 493)
+scale = Vector2(0.695998, 0.8938)
+texture = ExtResource("7_ypaih")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CardX5"]
+offset_left = -295.978
+offset_top = -136.496
+offset_right = 277.022
+offset_bottom = 145.504
+theme_override_fonts/normal_font = ExtResource("11_xx61y")
+text = "Amelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan Rinhart Amelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan RinhartAmelia Earhart standing under nose of her Lockheed Model 10-E Electra. Gelatin silver print, 1937. National Portrait Gallery, Smithsonian Institution; gift of George R. Rinhart, in memory of Joan Rinhart"
+
+[node name="start_sound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(186, 352)
+stream = ExtResource("6_8m5xk")
+
+[node name="switch_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_uoyx8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.005
+autostart = true
+
+[connection signal="released" from="TouchScreenButton" to="." method="_on_touch_screen_button_released"]
+[connection signal="pressed" from="CardX2/right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="CardX2/left" to="." method="_on_left_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
